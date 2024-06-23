@@ -35,7 +35,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
             className=" cursor-pointer items-center gap-1 px-4 flex"
           >
             <Image src="/icons/logo.svg" alt="logo" width={34} height={34} />
-            <h1 className="text-26 font-imb-plex-serif font-bold text-black-1">
+            <h1 className="text-26 font-ibm-plex-serif font-bold text-black-1">
               Horizon
             </h1>
           </Link>
