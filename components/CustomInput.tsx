@@ -12,16 +12,9 @@ interface CustomInput {
   control: Control<z.infer<typeof formSchema>>;
   label: string;
   placeholder: string;
-  id?: string;
 }
 
-const CustomInput = ({
-  control,
-  name,
-  label,
-  placeholder,
-  id,
-}: CustomInput) => {
+const CustomInput = ({ control, name, label, placeholder }: CustomInput) => {
   return (
     <FormField
       control={control}
@@ -36,7 +29,6 @@ const CustomInput = ({
                 type={name === "password" ? "password" : "text"}
                 className="input-class"
                 {...field}
-                id={id}
               />
             </FormControl>
             <FormMessage className="form-message mt-2" />
