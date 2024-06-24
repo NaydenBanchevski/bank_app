@@ -12,7 +12,6 @@ import { createTransfer } from "@/lib/actions/dwolla.actions";
 import { getBank, getBankByAccountId } from "@/lib/actions/user.actions";
 import { decryptId } from "@/lib/utils";
 
-import { BankDropdown } from "./BankDropDown";
 import { Button } from "./ui/button";
 import {
   Form,
@@ -26,6 +25,7 @@ import {
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { createTransaction } from "@/lib/actions/transaction.actions";
+import { BankDropdown } from "./BankDropdown";
 
 const formSchema = z.object({
   email: z.string().email("Invalid email address"),
