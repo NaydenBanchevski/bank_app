@@ -12,7 +12,7 @@ import {
 } from "@/lib/actions/user.actions";
 import Image from "next/image";
 
-const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
+const PlaidLink = ({ user, variant, newStyle }: PlaidLinkProps) => {
   const router = useRouter();
 
   const [token, setToken] = useState("");
@@ -74,14 +74,23 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
         </Button>
       ) : (
         <Button onClick={() => open()} className="plaidlink-default">
-          <Image
-            src="/icons/connect-bank.svg"
-            alt="connect bank"
-            width={24}
-            height={24}
-          />
-          <p className="text-[16px] hidden font-semibold text-black-2 xl:block">
-            Connect bank
+          {newStyle ? (
+            <Image src="/icons/plus.svg" width={20} height={20} alt="plus" />
+          ) : (
+            <Image
+              src="/icons/connect-bank.svg"
+              alt="connect bank"
+              width={24}
+              height={24}
+            />
+          )}
+
+          <p
+            className={`text-[16px] hidden font-semibold  xl:block ${
+              newStyle ? newStyle : "text-black-2"
+            }`}
+          >
+            {newStyle ? "Add Bank" : "Connect Bank"}
           </p>
         </Button>
       )}
