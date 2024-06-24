@@ -1,4 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Horizon App 🚀
+
+This repository contains a web application built using the following technologies:
+
+- **Next.js**: A React framework for server-side rendering and static site generation. ⚛️
+
+- **TypeScript**: A typed superset of JavaScript that helps with code reliability and readability. 📘
+
+- **Appwrite**: An open-source backend as a service for managing databases, authentication, and more. 🛠️
+
+- **Plaid**: A service to securely connect and interact with user bank accounts. 💳
+
+- **Dwolla**: An API for facilitating bank transfers. 💸
+
+- **React Hook Form**: A library for managing form state and validation in React. 📝
+
+- **Zod**: A TypeScript-first schema declaration and validation library. ✅
+
+- **TailwindCSS**: A utility-first CSS framework for rapid UI development. 🎨
+
+- **Chart.js**: A JavaScript library for creating dynamic charts and graphs. 📊
+
+- **ShadCN**: A component library that enhances the user interface. 🖼️
+
+Thanks to JS Mastery for this amazing masterclass tutorial! 🙏 🌟
 
 ## Getting Started
 
